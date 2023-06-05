@@ -3,6 +3,8 @@
 
 Submission repository for assignments of SIV-ROS project of Robotics Club 2023-24.
 
+
+
 ## Objective
 
 - Introduce and familiarise mentees with ROS, Gazebo and Rviz
@@ -49,5 +51,11 @@ Create a package - “Image_processes” that can subscribe and publish topics f
 1. Node1 -: Publish webcam image frames to the topic “Webcam_img”. (“Webcam_img” topic takes image frames from webcam as data).
 2. Node2 -: It will subscribe to the topic “Webcam_img” and publish data to the topic “Webcam_cropped”. (“Webcam_cropped” topic has image frames from webcam and crop  it by 30% in pixels).
 3. Node3 -: It will subscribe to the topic “Webcam_cropped” and show it.
+
+# Assignment 1: what I did
+Created a package 'image_processes' containing 3 nodes
+Node 1- captures image from the webcam and publishes it onto a topic
+Node 2- subscribes from the topic, crops the captured image by 30% in pixels and publishes it onto another topic
+Node 3- subscribes from topic and displays the image
 
 **Edit:** Create a launch file named ```image_cropping.launch``` which launches all the nodes at once.
